@@ -1,0 +1,94 @@
+/* ===================================================
+   colores.css - Configuración de Paleta e Identidad
+   Tema: Inteligencia Artificial (AI / Sci-Fi / Data)
+   =================================================== */
+
+:root {
+  /* Colores Principales - IA & Futuro */
+  --ai-bg-dark: #0f172a;          /* Azul Oscuro Profundo (Fondo) */
+  --ai-bg-card: #1e293b;          /* Contenedores / Tarjetas */
+  --ai-primary: #06b6d4;          /* Cian / Neón Tecnológico */
+  --ai-secondary: #6366f1;        /* Índigo / Púrpura Eléctrico */
+  --ai-accent: #10b981;           /* Verde Menta / Redes Neuronales */
+  --ai-glow: #38bdf8;             /* Azul Neón con Brillo */
+  
+  /* Textos y Modos */
+  --ai-text-primary: #f8fafc;     /* Texto Claro Principal */
+  --ai-text-secondary: #94a3b8;   /* Texto Secundario */
+  --ai-border: #334155;           /* Bordes sutiles */
+  
+  /* Gradientes de Inteligencia Artificial */
+  --gradiente-ia-1: linear-gradient(135deg, #06b6d4 0%, #6366f1 100%);
+  --gradiente-ia-2: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+  --gradiente-ia-dark: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  
+  /* Sombras y Efectos Glow */
+  --glow-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+  --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Restablecimiento Básico y Estilos Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--ai-bg-dark);
+  color: var(--ai-text-primary);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Enlaces y Acentos */
+a {
+  color: var(--ai-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--ai-glow);
+  text-shadow: var(--glow-shadow);
+}
+
+/* Botones con Estilo IA */
+.btn-ia {
+  background: var(--gradiente-ia-1);
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--glow-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-ia:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
+}
+
+/* Contenedores y Tarjetas */
+.card-ia {
+  background-color: var(--ai-bg-card);
+  border: 1px solid var(--ai-border);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.3s ease;
+}
+
+.card-ia:hover {
+  border-color: var(--ai-primary);
+}
+
+/* Títulos con Gradiente */
+.titulo-ia {
+  background: var(--gradiente-ia-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
